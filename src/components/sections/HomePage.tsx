@@ -23,7 +23,7 @@ const HomePage = () => {
         <span className="text-blue-200">Digital</span> Transformation
       </h1>
       <p className="text-lg text-white text-center mb-8">
-        اكتشف عالمًا جديدًا من الممكنيات الرقمية معنا.
+      نحن نفتح أبواب عالم الإبداع الرقمي لك 
       </p>
       <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
         من نحن
