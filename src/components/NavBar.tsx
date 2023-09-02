@@ -1,10 +1,15 @@
 import React, { useState } from "react";
- import { RiMenuLine } from "react-icons/ri";
+import { RiMenuLine } from "react-icons/ri";
 import Logo from "./Logo";
 
 const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const NavLinks: string[] = ["من نحن", "منهجيتنا في العمل", "خدماتنا ", "للتواصل"];
+  const NavLinks: string[] = [
+    "من نحن",
+    "منهجيتنا في العمل",
+    "خدماتنا ",
+    "للتواصل",
+  ];
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -15,9 +20,11 @@ const NavBar: React.FC = () => {
 
   return (
     <nav
-      className={'fixed top-0 left-0 right-0 z-10 flex items-center justify-between p-5 bg-blue-200' }
+      className={
+        "fixed top-0 left-0 right-0 z-10 flex items-center justify-between p-5 "
+      }
     >
-        <Logo/>
+      <Logo />
       <div className="md:hidden">
         <RiMenuLine
           className="text-xl cursor-pointer"
