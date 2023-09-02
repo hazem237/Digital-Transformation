@@ -1,13 +1,10 @@
 import React, { useState } from "react";
-// import { RiMenuLine } from "react-icons/ri";
-// import { ThemesColors, useTheme } from "../ThemeContext";
-// import { DarkModeSwitch } from "react-toggle-dark-mode";
+ import { RiMenuLine } from "react-icons/ri";
+import Logo from "./Logo";
 
 const NavBar: React.FC = () => {
-//   const { isDarkMode, toggleDarkMode } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const NavLinks: string[] = ["Home", "About", "Projects", "Contact"];
-
+  const NavLinks: string[] = ["من نحن", "منهجيتنا في العمل", "خدماتنا ", "للتواصل"];
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -18,13 +15,14 @@ const NavBar: React.FC = () => {
 
   return (
     <nav
-      className={'fixed top-0 left-0 right-0 z-10 flex items-center justify-end p-4' }
+      className={'fixed top-0 left-0 right-0 z-10 flex items-center justify-between p-5 bg-blue-200' }
     >
+        <Logo/>
       <div className="md:hidden">
-        {/* <RiMenuLine
+        <RiMenuLine
           className="text-xl cursor-pointer"
           onClick={handleMenuClick}
-        /> */}
+        />
       </div>
       <div className=" w-1/3 flex justify-around p-2 mr-4">
         <div
@@ -47,15 +45,6 @@ const NavBar: React.FC = () => {
             </a>
           ))}
         </div>
-
-        {/* Toggle Dark/Light Mode */}
-        {/* <DarkModeSwitch
-          checked={isDarkMode}
-          onChange={toggleDarkMode}
-          size={25}
-          sunColor="#DAA520"
-          moonColor='#1E90FF'
-        /> */}
       </div>
     </nav>
   );
