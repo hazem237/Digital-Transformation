@@ -41,8 +41,9 @@ const NavBar: React.FC = () => {
         >
           {NavLinks.map((link) => (
             <a
-              href="#home"
-              className="block py-2 md:p-0  transition no-underline relative"
+              key={link}
+              href={'#' + link}
+              className="block py-2 md:p-0  font-bold  transition no-underline relative text-blue-400"
               onClick={closeMenu}
             >
               {link}

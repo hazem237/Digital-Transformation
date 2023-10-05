@@ -15,7 +15,8 @@ const HomePage = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-center h-screen"
+      className="flex flex-col items-center justify-center h-screen" 
+      id="home"
       style={backgroundStyle}
     >
       <h1 className="text-4xl font-bold text-white mb-4 mt-10 ">
