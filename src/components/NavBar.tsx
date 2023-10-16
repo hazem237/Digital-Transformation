@@ -5,10 +5,10 @@ import Logo from "./Logo";
 const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const NavLinks: string[] = [
-    "من نحن",
+    "للتواصل",
+    "من نحن", 
     "منهجيتنا في العمل",
     "خدماتنا ",
-    "للتواصل",
   ];
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);

@@ -15,19 +15,21 @@ const HomePage = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-center h-screen" 
+      className="flex flex-col items-center justify-center h-screen"
       id="home"
       style={backgroundStyle}
     >
       <h1 className="text-4xl font-bold text-white mb-4 mt-10 ">
         {" "}
-        <span className="text-blue-200">Digital</span> Transformation
+        <span className="text-blue-400">Digital</span> Transformation
       </h1>
       <p className="text-lg text-white text-center mb-8">
-      نحن نفتح أبواب عالم الإبداع الرقمي لك 
+        نحن نفتح أبواب عالم الإبداع الرقمي لك
       </p>
       <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
-        من نحن
+        <a href='#من نحن'>
+          من نحن
+        </a>
       </button>
       <div className="mt-4 animate-bounce">
         <FaArrowDown className="text-white text-2xl" />
