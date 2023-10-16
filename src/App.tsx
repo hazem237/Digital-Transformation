@@ -1,9 +1,6 @@
 import React from 'react';
 import NavBar from './components/NavBar';
-import HomePage from './components/sections/HomePage';
-import Strategy from './components/sections/Strategy';
-import AboutUs from './components/sections/aboutus';
-import ContactUs from './components/sections/contactus';
+import { HomePage, AboutUs, ContactUs, OurServices, Strategy } from './components/sections';
 
 function App() {
   return (
@@ -11,6 +8,7 @@ function App() {
       <NavBar />
       <HomePage />
       <Strategy />
+      <OurServices />
       <AboutUs />
       <ContactUs />
     </div>

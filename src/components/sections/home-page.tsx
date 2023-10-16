@@ -1,7 +1,7 @@
 import React from "react";
 import { FaArrowDown } from "react-icons/fa";
 
-const HomePage = () => {
+const HomePage:React.FC = () => {
   const backgroundImageUrl =
     "https://hbr.org/resources/images/article_assets/2019/02/Mar19_11_825412904.jpg";
 

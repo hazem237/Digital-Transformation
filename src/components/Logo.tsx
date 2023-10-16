@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Logo = () => {
+const Logo:React.FC = () => {
   return (
     <a className="text-center" href='#home'>
       <span className="text-2xl font-bold text-blue-400">Digital</span>

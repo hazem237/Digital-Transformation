@@ -1,6 +1,7 @@
+import React from 'react';
 import EmailForm from '../EmailForm';
 
-const ContactUs = () => {
+const ContactUs: React.FC = () => {
     return (
         <section id='للتواصل' className='sm:snap-start flex justify-center'>
             <div

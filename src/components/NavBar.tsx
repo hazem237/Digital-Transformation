@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { RiMenuLine } from "react-icons/ri";
 import Logo from "./Logo";
 
 const NavBar: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const NavLinks: string[] = [
     "للتواصل",
     "من نحن", 
-    "منهجيتنا في العمل",
     "خدماتنا ",
+    "منهجيتنا في العمل",
   ];
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
