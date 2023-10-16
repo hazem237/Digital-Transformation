@@ -22,7 +22,7 @@ const OurServices:React.FC = () => {
       <div
         className="h-full w-1/2 rounded-full"
         style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL}/strategy.jpg)`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}/Our-Services.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
