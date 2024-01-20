@@ -1,8 +1,8 @@
 import React from 'react';
 
-const AboutUs = () => {
+const AboutUs:React.FC = () => {
     return (
-        <section className="bg-white flex items-center justify-between h-[420px] p-10">
+        <section className="bg-white flex items-center justify-between h-[420px] p-10" id='من نحن'>
             <div
                 className="h-full w-1/2 rounded-full"
                 style={{

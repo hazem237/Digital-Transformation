@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { RiMenuLine } from "react-icons/ri";
 import Logo from "./Logo";
 
 const NavBar: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const NavLinks: string[] = [
-    "من نحن",
-    "منهجيتنا في العمل",
-    "خدماتنا ",
     "للتواصل",
+    "من نحن", 
+    "خدماتنا ",
+    "منهجيتنا في العمل",
   ];
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -41,8 +41,9 @@ const NavBar: React.FC = () => {
         >
           {NavLinks.map((link) => (
             <a
-              href="#home"
-              className="block py-2 md:p-0  transition no-underline relative"
+              key={link}
+              href={'#' + link}
+              className="block py-2 md:p-0  font-bold  transition no-underline relative text-blue-400"
               onClick={closeMenu}
             >
               {link}

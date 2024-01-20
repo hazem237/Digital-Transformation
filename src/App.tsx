@@ -1,16 +1,16 @@
 import React from 'react';
 import NavBar from './components/NavBar';
-import HomePage from './components/sections/HomePage';
-import Strategy from './components/sections/Strategy';
-import AboutUs from './components/sections/aboutus';
+import { HomePage, AboutUs, ContactUs, OurServices, Strategy } from './components/sections';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
       <HomePage />
-      <AboutUs />
       <Strategy />
+      <OurServices />
+      <AboutUs />
+      <ContactUs />
     </div>
   );
 }
